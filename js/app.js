@@ -27,6 +27,34 @@ for(let i = 0; i<n; i++){
 
         }
         console.log(output)
+
+        //3 Scrittura layout per rappresentare i valori in una griglia.
+            //3.1 Identificazione dell'elemento che avrà la funzione di elemento padre della griglia.
+            const gridElement = document.querySelector('.grid'); //Element | Null
+            //3.2 Creazione dell'elemento HTML figlio di gridElement.
+            const liElement = document.createElement('li'); //Element | Null
+            liElement.innerHTML = output
+            //3.3 Collegamento di liElement a gridElement.
+            gridElement.append(liElement)
+            //3.4 Decorare la griglia.
+                //3.4.1 Aggiungere classi agli elementi della griglia.
+                liElement.classList.add('item')
+
+                if(output === ('BuzzFizz')){
+                    liElement.classList.add('buzz_fizz')
+
+                } else if (output === ('Fizz')){
+                    liElement.classList.add('fizz')
+
+                } else if (output === ('Buzz')){
+                    liElement.classList.add('buzz')
+
+                }   else {
+                    liElement.classList.add('normal')
+
+                }
+                
+
         
 
 }

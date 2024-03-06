@@ -1,0 +1,64 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li,
+menu{
+    list-style: none;
+}
+
+/* LAYOUT */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: maroon;
+}
+
+/* MAIN */
+
+.main__title{
+    text-align: center;
+    font-size: 80px;
+    margin: 30px 0;
+    color: white;
+}
+
+/* GRID */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 30px;
+}
+
+.item{
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* COLOURS */
+
+.normal{
+    background-color: lightblue;
+}
+
+.fizz{
+    background-color: lightgreen;
+}
+
+.buzz{
+    background-color: lightcoral;
+}
+
+.buzz_fizz{
+    background-color: lightyellow;
+}
